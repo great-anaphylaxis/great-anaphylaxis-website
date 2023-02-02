@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 
 a {
     color: rgb(10, 150, 10);
-    font-family: cursive, monospace, auto;
+    font-family: "Consolas", monospace, auto;
     text-decoration: none;
 }
 
@@ -40,7 +40,7 @@ a {
     color: rgb(210, 210, 210);
     padding: 2vh 2vw 2vh 2vw;
     width: fit-content;
-    font-family: cursive, monospace, auto;
+    font-family: "Consolas", monospace, auto;
     margin: auto;
     border-radius: 20px;
 }
@@ -65,7 +65,7 @@ a {
     color: rgb(210, 210, 210);
     padding: 2vh 2vw 2vh 2vw;
     text-align: center;
-    font-family: cursive, monospace, auto;
+    font-family: "Consolas", monospace, auto;
     margin: auto;
     border-radius: 20px;
 }
@@ -140,7 +140,7 @@ a {
     height: fit-content;
     background-color: rgba(20, 20, 20, 0.8);
     color: rgb(210, 210, 210);
-    font-family: cursive, monospace, auto;
+    font-family: "Consolas", monospace, auto;
     border-radius: 20px;
     padding: 1em;
     display: flex;
@@ -191,7 +191,7 @@ a {
     position: relative;
     font-size: 1em;
     color: rgb(210, 210, 210);
-    font-family: cursive, monospace, auto;
+    font-family: "Consolas", monospace, auto;
     background-color: rgb(10, 10, 10);
     display: block;
     margin: auto;
