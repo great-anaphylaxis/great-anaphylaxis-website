@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Great Anaphylaxis</title>
+    <link rel="stylesheet" href="/src/css/base.css">
+    <link rel="stylesheet" href="src/css/projects.css">
+</head>
+<body>
+    <div class="topbar">
+        <a href="/home.html">
+            <div class="topbar-items">Home</div>
+        </a>
+        <a href="/projects.html">
+            <div class="topbar-items">Projects</div>
+        </a>
+    </div>
+
+    <div class="description-text" id="description-text-4">
+        <div class="ch-title">Projects</div>
+        <hr>
+        <div class="ch-description">
+            Projects created by me. Click on the projects to open them.
+        </div>
+    </div>
+
+
+
+    <div class="projects">
+        <select class="center-select" id="center-select-1" name="sort">
+            <option value="best">Best</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+        </select>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    
+    <script type="module" src="/src/js/three.js"></script>
+    <script type="module" src="/src/js/base.js"></script>
+    <script type="module" src="src/js/projects.js"></script>
+</body>
+</html>
