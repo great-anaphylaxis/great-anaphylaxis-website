@@ -189,3 +189,21 @@ a {
     margin: auto;
     margin-bottom: 3em;
 }
+
+@keyframes hide-topbar {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -100px;
+    }
+}
+
+@keyframes show-topbar {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: -0px;
+    }
+}

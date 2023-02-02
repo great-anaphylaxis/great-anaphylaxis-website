@@ -16,6 +16,9 @@ let geometry = {
 let pastScrollPercent = 0;
 let scrollPercent = getScrollPercent();
 
+
+let topbar = document.querySelector(".topbar");
+
 function start() {
 
     createStarField(0, 100);
@@ -44,10 +47,12 @@ function onscroll() {
     }
 
     else if (scrollPercent > pastScrollPercent) {
+        topbar.style.animation = "1s ease 0s 1 normal forwards running hide-topbar";
         camera.position.z += (1 * (scrollDelta * 1));
     }
 
     else if (scrollPercent < pastScrollPercent) {
+        topbar.style.animation = "1s ease 0s 1 normal forwards running show-topbar";
         camera.position.z += (1 * (scrollDelta * 1));
     }
 
