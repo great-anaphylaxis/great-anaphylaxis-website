@@ -126,6 +126,10 @@ a {
     font-weight: bold;
 }
 
+.topbar-items:hover {
+    background-color: rgba(50, 50, 50, 0.9);
+}
+
 .projects {
     position: relative;
     top: 50vh;
@@ -143,6 +147,10 @@ a {
     flex-direction: row-reverse;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+}
+
+.project:hover {
+    background-color: rgba(50, 50, 50, 0.8);
 }
 
 .project-image {
