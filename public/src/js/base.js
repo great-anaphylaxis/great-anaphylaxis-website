@@ -18,6 +18,7 @@ let scrollPercent = getScrollPercent();
 
 
 let topbar = document.querySelector(".topbar");
+let hideOnScroll = document.querySelector(".hide-onscroll");
 
 function start() {
 
@@ -47,13 +48,24 @@ function onscroll() {
     }
 
     else if (scrollPercent > pastScrollPercent) {
-        topbar.style.animation = "1s ease 0s 1 normal forwards running hide-topbar";
         camera.position.z += (1 * (scrollDelta * 1));
+
+        if (pastScrollPercent > 0) {
+            topbar.style.animation = "0.5s ease 0s 1 normal forwards running hide-topbar";
+
+            if (hideOnScroll != undefined) {
+                hideOnScroll.style.animation = "0.5s linear 0s 1 normal forwards running hide-onscroll-anim";
+                hideOnScroll = undefined;
+            }
+        }
     }
 
     else if (scrollPercent < pastScrollPercent) {
-        topbar.style.animation = "1s ease 0s 1 normal forwards running show-topbar";
         camera.position.z += (1 * (scrollDelta * 1));
+
+        if (pastScrollPercent > 0) {
+            topbar.style.animation = "0.5s ease 0s 1 normal forwards running show-topbar";
+        }
     }
 
     pastScrollPercent = scrollPercent;

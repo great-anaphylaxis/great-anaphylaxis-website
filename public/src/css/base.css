@@ -132,7 +132,7 @@ a {
 
 .projects {
     position: relative;
-    top: 50vh;
+    top: 80vh;
     padding: 2em 2em 2em 2em;
 }
 
@@ -213,5 +213,30 @@ a {
     }
     100% {
         top: -0px;
+    }
+}
+
+
+
+.hide-onscroll {
+    color: rgb(210, 210, 210);
+    font-size: 1em;
+    font-family: "Consolas", monospace, auto;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    position: relative;
+    top: 65vh;
+}
+
+@keyframes hide-onscroll-anim {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
     }
 }
