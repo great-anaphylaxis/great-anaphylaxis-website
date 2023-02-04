@@ -229,3 +229,7 @@ a {
     margin-top: 25vh;
     margin-bottom: 25vh;
 }
+
+#data {
+    display: none;
+}

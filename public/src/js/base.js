@@ -19,9 +19,15 @@ let scrollPercent = getScrollPercent();
 
 let topbar = document.querySelector(".topbar");
 let hideOnScroll = document.getElementById("scrolldown-hint");
+let data = document.getElementById("data");
 
 function start() {
-    createStarField(0, 100);
+    if (compareData("name", "project")) {
+        createStarField(0, 1);
+    }
+    else {
+        createStarField(0, 100);
+    }
 
     render();
 
@@ -110,6 +116,15 @@ function random(min, max) {
 
 function lerp(start, end, amount){
     return (1 - amount) * start + amount * end;
+}
+
+function compareData(data_property, data_value) {
+    if (data != undefined && data.dataset[data_property] != undefined) {
+        if (data.dataset[data_property] == data_value) {
+            return true;
+        }
+    }
+    return false;
 }
 
 ///
