@@ -201,7 +201,7 @@ a {
 
 
 #scrolldown-hint {
-    color: rgb(210, 210, 210);
+    color: rgb(10, 150, 10);
     font-size: 1em;
     font-family: "Consolas", monospace, auto;
     font-weight: bold;
@@ -211,6 +211,7 @@ a {
     text-align: center;
     position: relative;
     top: 65vh;
+    animation: 1s linear 0s infinite normal none running blinking-scrolldown-hint;
 }
 
 @keyframes hide-onscroll-anim {
@@ -223,6 +224,17 @@ a {
     }
 }
 
+@keyframes blinking-scrolldown-hint {
+    0% {
+        color:rgb(10, 150, 10);
+    }
+    50% {
+        color: rgb(210, 210, 210)
+    }
+    100% {
+        color: rgb(10, 150, 10);
+    }
+}
 
 
 .header {

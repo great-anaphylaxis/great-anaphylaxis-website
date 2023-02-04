@@ -61,7 +61,7 @@ function createItems(project, title, description, date, quality) {
 
 createItems("os",
 "An unnamed operating system",
-"My attempt at creating my own operating system. It is a 32 bit operating system with it's own bootloader. Note: It is bad and MIGHT NOT WORK ON REAL HARDWARE. But, it works on QEMU.",
+"My attempt at creating my own operating system. It is a 32 bit operating system with it's own bootloader. Note: It has not been tested on real hardware so it MIGHT NOT WORK ON REAL HARDWARE. But, it works on QEMU (a virtual machine).",
 2, -3
 );
 
