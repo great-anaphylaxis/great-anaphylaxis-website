@@ -18,10 +18,9 @@ let scrollPercent = getScrollPercent();
 
 
 let topbar = document.querySelector(".topbar");
-let hideOnScroll = document.querySelector(".hide-onscroll");
+let hideOnScroll = document.getElementById("scrolldown-hint");
 
 function start() {
-
     createStarField(0, 100);
 
     render();
@@ -94,7 +93,7 @@ function createStar(x, y, z) {
 }
 
 function createStarField(zStart, zEnd) {
-    let zStartPos = zStart - 20;
+    let zStartPos = zStart - 40;
     let zEndPos = zEnd + 40;
 
     for (let i = 0; i < 100; i++) {

@@ -68,6 +68,8 @@ a {
     font-family: "Consolas", monospace, auto;
     margin: auto;
     border-radius: 20px;
+    margin-top: 75vh;
+    margin-bottom: 25vh;
 }
 
 .description-text > .ch-title {
@@ -81,26 +83,6 @@ a {
 .description-text > hr {
     margin-top: 1em;
     margin-bottom: 1em;
-}
-
-#main-text-1 {
-    top: 25vh;
-}
-
-#description-text-1 {
-    top: 100vh;
-}
-
-#description-text-2 {
-    top: 175vh;
-}
-
-#description-text-3 {
-    top: 250vh;
-}
-
-#description-text-4 {
-    top: 25vh;
 }
 
 
@@ -132,7 +114,7 @@ a {
 
 .projects {
     position: relative;
-    top: 80vh;
+    top: 50vh;
     padding: 2em 2em 2em 2em;
 }
 
@@ -218,7 +200,7 @@ a {
 
 
 
-.hide-onscroll {
+#scrolldown-hint {
     color: rgb(210, 210, 210);
     font-size: 1em;
     font-family: "Consolas", monospace, auto;
@@ -239,4 +221,11 @@ a {
         opacity: 0;
         display: none;
     }
+}
+
+
+
+.header {
+    margin-top: 25vh;
+    margin-bottom: 25vh;
 }
