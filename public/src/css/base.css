@@ -85,7 +85,27 @@ a {
     margin-bottom: 1em;
 }
 
+.description-text > .ch-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5em;
+    justify-content: center;
+}
 
+.description-text > .ch-list > a > .ch-list-items {
+    border-radius: 10px;
+    width: min-content;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    background-color: rgb(20, 20, 20);
+    color: rgb(210, 210, 210);
+    border: 1px solid rgb(10, 150, 10);
+    margin: 0.25em;
+    white-space: nowrap;
+}
+
+.description-text > .ch-list > a > .ch-list-items:hover {
+    background-color: rgb(50, 50, 50);
+}
 
 
 .topbar {
