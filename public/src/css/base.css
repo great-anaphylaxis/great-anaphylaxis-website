@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+* ::selection {
+    background-color: rgb(10, 100, 10);
+}
+
 body {
     overflow-x: hidden;
     background-color: rgb(8, 8, 8);
