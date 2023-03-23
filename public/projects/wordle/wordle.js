@@ -125,7 +125,7 @@ function submitWord() {
             //WIN!
             showWordHints();
 
-            openDialog("YOU WON!");
+            winDialog();
         }
 
         else {
@@ -295,6 +295,15 @@ function loseDialog() {
     openDialog("You Lose! The word was " + chosenWord.toUpperCase());
 
     dialogButton.innerText = "RESTART";
+    dialogButton.addEventListener("click", () => {
+        window.location.reload();
+    });
+}
+
+function winDialog() {
+    openDialog("YOU WON!");
+
+    dialogButton.innerText = "NEW WORD";
     dialogButton.addEventListener("click", () => {
         window.location.reload();
     });
