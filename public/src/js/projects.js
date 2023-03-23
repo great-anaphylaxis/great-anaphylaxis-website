@@ -57,7 +57,7 @@ function createItems(project, title, description, date, quality) {
     list.appendChild(parent0);
 }
 
-//last date = 7
+//last date = 8
 
 createItems("os",
 "An unnamed operating system",
@@ -83,27 +83,33 @@ createItems("the-raid",
 1, 0
 );
 
+createItems("wordle",
+"Wordle",
+"A game where you guess a five letter word. Made in HTML, CSS and Javascript",
+8, 1
+);
+
 createItems("overwhelm",
 "Overwhelm",
 "A game made in a day using the Unity Game Engine. It is game very similar to a space shooter game. All arts and music made by me.",
-4, 1
+4, 2
 );
 
 createItems("the-maze",
 "The Maze of the Periodic Scale",
 "A game made during the Global Game Jam 2021. Also my first game jam. The game is highly unpolished.",
-0, 2
+0, 3
 );
 
 createItems("chat-yourself",
 "Chat Yourself",
 "You can chat with yourself here. I mean, why wouldn't you?",
-6, 3
+6, 4
 )
 
 createItems("annoying-brick-breaker-game",
 "Annoying Brick Breaker Game",
 "A game made in a day using the Unity Game Engine.",
-3, 4
+3, 5
 );
 
