@@ -130,7 +130,7 @@ body {
         animation: 0.2s linear 0s 1 normal forwards running keyhover;
     }
 
-    #dialogbutton:hover {
+    .dialogbutton:hover {
         background-color: rgb(30, 110, 30);
     }
 }
@@ -194,6 +194,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    text-align: center;
 }
 
 #dialogcontent {
@@ -202,15 +203,33 @@ body {
     font-size: 4em;
 }
 
-#dialogbutton {
+.dialogbutton {
     text-align: center;
     background-color: rgb(50, 150, 50);
     width: fit-content;
     padding: 0.5em;
-    margin: auto;
+    margin: 2px;
     border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 10px;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-size: 3em;
+    display: inline-block;
+}
+
+
+#fourthrow {
+    margin-top: 2em;
+}
+
+
+#info {
+    text-align: center;
+    margin: 1em;
+}
+
+.infos {
+    color: rgb(200, 200, 200);
+    font-size: 1em;
+    margin-bottom: 0.45em;
 }
