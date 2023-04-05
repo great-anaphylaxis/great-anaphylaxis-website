@@ -133,13 +133,15 @@ function compareData(data_property, data_value) {
 }
 
 function putAge() {
-    let dob = new Date("01/12/2009");
-    let month_diff = Date.now() - dob.getTime();  
-    let age_dt = new Date(month_diff);
-    let year = age_dt.getUTCFullYear();
-    let ageYear = Math.abs(year - 1970);
-
-    age.innerText = ageYear;
+    if (age != undefined) {
+        let dob = new Date("01/12/2009");
+        let month_diff = Date.now() - dob.getTime();  
+        let age_dt = new Date(month_diff);
+        let year = age_dt.getUTCFullYear();
+        let ageYear = Math.abs(year - 1970);
+    
+        age.innerText = ageYear;
+    }
 }
 
 ///
