@@ -1,6 +1,7 @@
 import * as THREE from "/src/js/three.js";
 
 let canvas = document.getElementById("canvas");
+let age = document.getElementById("age");
 let renderer = new THREE.WebGLRenderer({canvas});
 let camera = new THREE.PerspectiveCamera(75, 2, 0.1, 50);
 let scene = new THREE.Scene();
@@ -125,6 +126,16 @@ function compareData(data_property, data_value) {
         }
     }
     return false;
+}
+
+function putAge() {
+    let dob = new Date("01/12/2009");
+    let month_diff = Date.now() - dob.getTime();  
+    let age_dt = new Date(month_diff);
+    let year = age_dt.getUTCFullYear();
+    let ageYear = Math.abs(year - 1970);
+
+    age.innerText = ageYear;
 }
 
 ///
