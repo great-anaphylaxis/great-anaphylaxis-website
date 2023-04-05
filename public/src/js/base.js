@@ -35,6 +35,10 @@ function start() {
     setTimeout(() => {
         window.scrollTo(0, 0);
     }, 10);
+
+    //
+
+    putAge();
 }
 
 function onresize() {
