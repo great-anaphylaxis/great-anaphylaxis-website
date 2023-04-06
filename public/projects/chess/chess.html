@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+
+    <link rel="stylesheet" href="./chess.css">
+    <link rel="icon" type="image/x-icon" href="./images/chess-pieces/white_pawn.png">
+</head>
+<body>
+    <div id="noclick" onclick="dialogoutput(1)"></div>
+    <div id="maindialog">
+        <div id="option1" class="sections">
+            <div class="label">Play over the board?</div>
+        </div>
+        <div id="option2" class="sections">
+            <div class="label">Play As:</div>
+            <select id="color2">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+            </select>
+        </div>
+        <div id="option3" class="sections">
+            <div class="label">Select a speed category:</div>
+            <select id="speed3">
+                <option value="ultrabullet">Ultrabullet (prone to errors)</option>
+                <option value="hyperbullet">Hyperbullet</option>
+                <option value="bullet" selected>Bullet</option>
+                <option value="blitz">Blitz</option>
+                <option value="rapid">Rapid</option>
+            </select>
+        </div>
+        <div id="buttonsection">
+            <div class="buttons" onclick="dialogoutput(2)">Continue</div>
+            <div class="buttons" onclick="dialogoutput(1)">Cancel</div>
+        </div>
+    </div>
+    <div id="title">
+        <div id="maintitle"><img src="./images/chess-pieces/white_pawn.png" width="100" height="100">Chess</div>
+        <div id="subtitle">by Jhareign Solidum</div>
+    </div>
+    <div class="options" onclick="optionclick(1)">Play over the board</div>
+    <div class="options" onclick="optionclick(2)">Play a grandmaster</div>
+    <div class="options" onclick="optionclick(3)">View others battling it out</div>
+
+    <script src="./chess.js"></script>
+</body>
+</html>

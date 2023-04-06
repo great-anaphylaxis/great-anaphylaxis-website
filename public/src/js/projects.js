@@ -57,12 +57,18 @@ function createItems(project, title, description, date, quality) {
     list.appendChild(parent0);
 }
 
-//last date = 8
+//last date = 9
 
 createItems("os",
 "An unnamed operating system",
 "My attempt at creating my own operating system. It is a 32 bit operating system with it's own bootloader. Note: It has not been tested on real hardware so it MIGHT NOT WORK ON REAL HARDWARE. But, it works on QEMU (a virtual machine).",
-2, -3
+2, -4
+);
+
+createItems("chess",
+"Chess by Jhareign Solidum",
+"Yeah, chess made by me! Play with yourself (or someone), or a grandmaster at chess, or I guess view chess games. Grandmaster you may ask? nah don't trust me:)",
+9, -3
 );
 
 createItems("cliff-jump-pou",

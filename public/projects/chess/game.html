@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+
+    <link rel="stylesheet" href="./game.css">
+    <link rel="icon" type="image/x-icon" href="./images/chess-pieces/white_pawn.png">
+</head>
+<body>
+    <div id="chessboard"></div>
+    <div class="dialog" id="promoteDialog">
+        <div class="description">What would you like to promote to?</div>
+        <div>
+            <img class="promotedoptions" id="optknight" src="./images/chess-pieces/white_knight.png" onclick="promotePiece('knight');">
+            <img class="promotedoptions" id="optbishop" src="./images/chess-pieces/white_bishop.png" onclick="promotePiece('bishop');">
+            <img class="promotedoptions" id="optrook" src="./images/chess-pieces/white_rook.png" onclick="promotePiece('rook');">
+            <img class="promotedoptions" id="optqueen" src="./images/chess-pieces/white_queen.png" onclick="promotePiece('queen');">
+        </div>
+    </div>
+    <div class="dialog" id="stateDialog">
+        <div class="description" id="state"></div>
+        <div id="stateDialogButtonList"></div>
+    </div>
+    <div id="buttonbar">
+        <div id="gameType"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

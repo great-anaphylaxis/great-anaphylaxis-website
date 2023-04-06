@@ -1,0 +1,115 @@
+* {
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(25, 48, 0);
+    overflow: hidden;
+}
+
+#title {
+    background-color: rgb(94, 181, 1);
+    width: fit-content;
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 2em;
+    margin: auto;
+    margin-top: 0.5em;
+}
+
+#maintitle {
+    font-size: 6em;
+}
+
+#subtitle {
+    margin-top: -0.4em;
+    margin-left: 110px;
+    font-size: 1.5em;
+}
+
+#maintitle > img {
+    vertical-align: text-top;
+}
+
+.options {
+    background-color: rgb(94, 181, 1);
+    width: fit-content;
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 2em;
+    margin: auto;
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+
+#maindialog {
+    position: fixed;
+    background-color: rgb(94, 181, 1);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: fit-content;
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 2em;
+    display: none;
+}
+
+#buttonsection {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    background-color: rgb(94, 181, 1);
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.sections {
+    margin: auto;
+    padding: 0.5em;
+}
+
+.label {
+    margin: auto;
+    width: fit-content;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+select {
+    margin: auto;
+    display: block;
+    font-size: 0.8em;
+    padding: 0.5em;
+}
+
+#noclick {
+    z-index: 90;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 10, 10, 0.5);
+    display: none;
+}
+
+@media (hover: hover) {
+    .options:hover {
+        background-color: rgb(124, 201, 5);
+    }
+
+    .buttons:hover {
+        background-color: rgb(124, 201, 5);
+    }
+}
