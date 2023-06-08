@@ -57,7 +57,7 @@ function createItems(project, title, description, date, quality) {
     list.appendChild(parent0);
 }
 
-//last date = 9
+//last date = 10
 
 createItems("os",
 "An unnamed operating system",
@@ -107,15 +107,21 @@ createItems("the-maze",
 0, 3
 );
 
+createItems("anagram",
+"Anagram",
+"Anagram is a prototype front-end social media-like project created by Jhareign Solidum. The design is very basic",
+10, 4
+);
+
 createItems("chat-yourself",
 "Chat Yourself",
 "You can chat with yourself here. I mean, why wouldn't you?",
-6, 4
-)
+6, 5
+);
 
 createItems("annoying-brick-breaker-game",
 "Annoying Brick Breaker Game",
 "A game made in a day using the Unity Game Engine.",
-3, 5
+3, 6
 );
 
