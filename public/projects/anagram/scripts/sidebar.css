@@ -1,0 +1,45 @@
+
+#sidebar {
+    padding: 1em;
+    border-right: 1px solid var(--theme-color);
+    width: min-content;
+}
+
+.sidebar_button {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    padding: 0.5em;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.sidebar_button:hover {
+    cursor: pointer;
+    background-color: rgb(25, 25, 25);
+}
+
+.sidebar_button_icon {
+    width: 2em;
+    height: 2em;
+}
+
+.sidebar_button_title {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 1em 0 1em;
+}
+
+#app_icon {
+    width: 3em;
+    height: 3em;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+#banner {
+    cursor: pointer;
+    user-select: none;
+}
