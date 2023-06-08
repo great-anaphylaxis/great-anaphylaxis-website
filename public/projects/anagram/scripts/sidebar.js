@@ -45,7 +45,7 @@ function createBanner(image) {
 
     // on click banner, then go to about page of the site
     banner.addEventListener("click", e=> {
-        window.location.href = ROOT + "./about.html";
+        window.location.href = ROOT + "/about.html";
     });
 
     // append it to sidebar
