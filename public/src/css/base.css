@@ -191,6 +191,10 @@ a {
     .project-info {
         width: 100%;
     }
+
+    .projects {
+        padding: 0em;
+    }
 }
 
 .center-select {
