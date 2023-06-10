@@ -105,7 +105,7 @@ function createStar(x, y, z) {
 
 function createStarField(zStart, zEnd) {
     let zStartPos = zStart - 40;
-    let zEndPos = zEnd + 40;
+    let zEndPos = zEnd + 60;
 
     for (let i = 0; i < 100; i++) {
         for (let j = 0; j < 5; j++) {
