@@ -109,7 +109,7 @@ createItems("the-maze",
 
 createItems("anagram",
 "Anagram",
-"Anagram is a prototype front-end social media-like project created by Jhareign Solidum. The design is very basic",
+"Anagram is part of the Great Anaphylaxis Imaginary Corporation™ Anagram is a prototype front-end social media-like project created by Jhareign Solidum. The design is very basic",
 10, 4
 );
 
