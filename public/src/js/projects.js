@@ -57,7 +57,7 @@ function createItems(project, title, description, date, quality) {
     list.appendChild(parent0);
 }
 
-//last date = 10
+//last date = 11
 
 createItems("os",
 "An unnamed operating system",
@@ -95,33 +95,39 @@ createItems("wordle",
 8, 1
 );
 
+createItems("coffee-cup-coding",
+"Coffee Cup Coding",
+"Coffee Cup Coding is part of the Great Anaphylaxis Imaginary Corporation™. Coffee Cup Coding is a coffee designed for programmers. Here is the website.",
+11, 2
+);
+
 createItems("overwhelm",
 "Overwhelm",
 "A game made in a day using the Unity Game Engine. It is game very similar to a space shooter game. All arts and music made by me.",
-4, 2
+4, 3
 );
 
 createItems("the-maze",
 "The Maze of the Periodic Scale",
 "A game made during the Global Game Jam 2021. Also my first game jam. The game is highly unpolished.",
-0, 3
+0, 4
 );
 
 createItems("anagram",
 "Anagram",
-"Anagram is part of the Great Anaphylaxis Imaginary Corporation™ Anagram is a prototype front-end social media-like project created by Jhareign Solidum. The design is very basic",
-10, 4
+"Anagram is part of the Great Anaphylaxis Imaginary Corporation™. Anagram is a prototype front-end social media-like project created by Jhareign Solidum. The design is very basic",
+10, 5
 );
 
 createItems("chat-yourself",
 "Chat Yourself",
 "You can chat with yourself here. I mean, why wouldn't you?",
-6, 5
+6, 6
 );
 
 createItems("annoying-brick-breaker-game",
 "Annoying Brick Breaker Game",
 "A game made in a day using the Unity Game Engine.",
-3, 6
+3, 7
 );
 

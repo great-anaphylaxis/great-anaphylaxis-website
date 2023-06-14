@@ -1,0 +1,388 @@
+
+* {
+    font-family: 'Geologica', sans-serif;
+}
+
+*::selection {
+    background-color: var(--second-color);
+    color: var(--theme-color);
+}
+
+:root {
+    --theme-color: rgb(230, 230, 230);
+    --contrast-color: rgb(150, 150, 150);
+    --contrast-color2: rgb(200, 200, 200);
+    --second-color: rgb(92, 49, 0);
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.section {
+    position: relative;
+    border-bottom: 5px solid black;
+    opacity: 0;
+}
+
+.section:last-of-type {
+    border-bottom: 0px solid black;
+}
+
+.section_head1, .section_head2, .section_head7 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Geologica', sans-serif;
+    color: var(--theme-color);
+}
+
+.section_head3, .section_head4, .section_head5 {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-10%);
+    font-family: 'Geologica', sans-serif;
+    color: var(--theme-color);
+    text-align: center;
+}
+
+.section_head6 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Geologica', sans-serif;
+    color: var(--theme-color);
+    text-align: center;
+}
+
+.description {
+    font-size: 1.8vw;
+    font-family: "Nunito", sans-serif;
+}
+
+.section_head2 > .description {
+    text-align: unset;
+}
+
+.section_head1 > .title, .section_head7 > .title {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.section_head1 > .topTitle {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.section_head2 > .title {
+    font-size: 5vw;
+}
+
+.section_head3 > .title, .section_head4 > .title, .section_head5 > .title, .section_head6 > .title{
+    font-size: 4vw;
+}
+
+.slideshow {
+    width: 100%;
+}
+
+.images {
+    display: flex;
+    width: fit-content;
+}
+
+.big_image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    user-select: none;
+}
+
+.big_image:first-child {
+    display: block;
+}
+
+.slideshowControls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.left_button {
+    position: absolute;
+    width: 3%;
+    height: 10%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    cursor: pointer;
+}
+
+.right_button {
+    position: absolute;
+    width: 3%;
+    height: 10%;
+    right: 0;
+    top: 50%;
+    transform: translate(0%,-50%);
+    cursor: pointer;
+}
+
+
+.itemContent, .itemContent2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.itemContent2 {
+    flex-direction: column;
+}
+
+.itemContent_item, .itemContent_item2 {
+    position: relative;
+    background-color: white;
+    display: flex;
+    padding: 0.25em;
+    margin: 1em;
+    min-width: 40vw;
+    flex: 1 0 0;
+}
+
+.itemContent_item:hover, .itemContent_item2:hover {
+    background-color: var(--contrast-color);
+    animation: 0.25s ease 0s grow;
+    animation-fill-mode: forwards;
+}
+
+.itemContent_item:not(:hover), .itemContent_item2:not(:hover) {
+    animation: 0.25s ease 0s shrink;
+    animation-fill-mode: forwards;
+}
+
+.itemContent_item2 {
+    min-width: 80vw;
+}
+
+.itemContent_image {
+    width: 10vw;
+    margin: 0.5em;
+}
+
+.itemContent_content {
+    margin: 0.5em;
+}
+
+.itemContent_title {
+    font-size: 1.75vw;
+}
+
+.itemContent_description {
+    font-size: 1.2vw;
+}
+
+
+.itemContent_properties {
+    position: absolute;
+    right: 1vw;
+    bottom: 0.5vw;
+}
+
+.itemContent_property {
+    font-size: 1.2vw;
+}
+
+
+
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--theme-color);
+    width: 100%;
+    user-select: none;
+    line-height: 400%;
+    padding-left: 0.5em;
+}
+
+.navbar_link {
+    color: black;
+    text-decoration: none;
+    padding: 0em 1em;
+    border-left: 1px solid black;
+    display: inline-block;
+}
+
+.navbar_link:hover {
+    background-color: var(--contrast-color);
+    border-radius: 10%;
+    animation: 0.25s ease 0s grow;
+    animation-fill-mode: forwards;
+}
+
+.navbar_link:not(:hover) {
+    animation: 0.25s ease 0s shrink;
+    animation-fill-mode: forwards;
+}
+
+.navbar_link:first-child {
+    border-left: 0px solid black;
+}
+
+@keyframes hide_navbar {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -100px;
+    }
+}
+
+@keyframes show_navbar {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: -0px;
+    }
+}
+
+@keyframes show_section {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes show_image {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+::-webkit-scrollbar {
+    width: initial;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--second-color);
+}
+
+
+.secretlyLink {
+    text-decoration: none;
+    color: unset;
+}
+
+.navbar_link:has(.navbar_logo) {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    border-left: 0px;
+    padding: 0em;
+    height: 0.1em;
+}
+
+.navbar_logo {
+    width: 6em;
+}
+
+.navbar_logo:hover {
+    background-color: var(--contrast-color2);
+    animation: 0.25s ease 0s grow;
+    animation-fill-mode: forwards;
+}
+
+.navbar_logo:not(:hover) {
+    animation: 0.25s ease 0s shrink;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1.1);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .section_head1 > .title, .section_head7 > .title {
+        font-size: 12vw;
+    }
+    
+    .section_head1 > .topTitle {
+        font-size: 3vw;
+    }
+
+    .section_head2 > .title {
+        font-size: 10vw;
+    }
+
+    .description {
+        font-size: 3vw;
+    }
+
+    .section_head3 > .title, .section_head4 > .title, .section_head5 > .title, .section_head6 > .title {
+        font-size: 7vw;
+    }
+
+    .left_button, .right_button {
+        width: 6%;
+        height: 5%;
+    }
+
+    .itemContent_image {
+        width: 20vw;
+    }
+
+    .itemContent_title {
+        font-size: 3vw;
+    }
+
+    .itemContent_description, .itemContent_property {
+        font-size: 2vw;
+    }
+
+    .navbar_link {
+        font-size: 2vw;
+    }
+
+    .navbar_logo {
+        height: 10vw;
+    }
+}
