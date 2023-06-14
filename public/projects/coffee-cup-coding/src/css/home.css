@@ -3,11 +3,6 @@
     font-family: 'Geologica', sans-serif;
 }
 
-*::selection {
-    background-color: var(--second-color);
-    color: var(--theme-color);
-}
-
 :root {
     --theme-color: rgb(230, 230, 230);
     --contrast-color: rgb(150, 150, 150);
@@ -15,11 +10,16 @@
     --second-color: rgb(92, 49, 0);
 }
 
+*::selection {
+    background-color: var(--second-color);
+    color: var(--theme-color);
+}
+
 body {
     background-color: black;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -379,10 +379,14 @@ body {
     }
 
     .navbar_link {
-        font-size: 2vw;
+        font-size: 0.6em;
+    }
+
+    .navbar_link:has(.navbar_logo) {
+        line-height: 1100%;
     }
 
     .navbar_logo {
-        height: 10vw;
+        width: 6.5em;
     }
 }
