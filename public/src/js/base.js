@@ -1,4 +1,5 @@
 import * as THREE from "/src/js/three.js";
+import { analytics, log } from "/src/js/analytics.js";
 
 let canvas = document.getElementById("canvas");
 let age = document.getElementById("age");
@@ -66,6 +67,15 @@ function onscroll() {
             if (hideOnScroll != undefined) {
                 hideOnScroll.style.animation = "0.5s linear 0s 1 normal forwards running hide-onscroll-anim";
                 hideOnScroll = undefined;
+
+                // analytics
+                if (compareData("name", "home")) {
+                    log(analytics, "homepage_scrolled_down");
+                }
+
+                else if (compareData("name", "projects")) {
+                    log(analytics, "projects_scrolled_down");
+                }
             }
         }
     }
