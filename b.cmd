@@ -4,4 +4,4 @@ git remote add origin https://github.com/great-anaphylaxis/great-anaphylaxis-web
 git remote -v
 git push -f origin master
 
-firebase deploy
+firebase deploy --only hosting:jhareignsolidum
