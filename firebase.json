@@ -1,11 +1,11 @@
 {
   "hosting": {
+    "site": "jhareignsolidum",
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
-  },
-  "site": "jhareignsolidum"
+  }
 }
