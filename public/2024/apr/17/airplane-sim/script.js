@@ -127,7 +127,7 @@ function mainloop() {
         }
     }
 
-    if (player.y > 600) {
+    if (player.y > 600 || player.y + player.height < 0) {
         gameOver()
     }
 
@@ -177,16 +177,14 @@ function main() {
     })
 
     window.addEventListener("touchstart", e => {
-        if (e.key == " " && allowJump) {
+        if (allowJump) {
             jumped = true
             allowJump = false;
         }
     })
 
     window.addEventListener("touchend", e => {
-        if (e.key == " ") {
-            allowJump = true;
-        }
+        allowJump = true;
     })
 
     createPlayer()
@@ -205,7 +203,7 @@ function entry() {
     });
 
     window.addEventListener("touchstart", e => {
-        if (e.key == " " && start == false) {
+        if (start == false) {
             start = true;
             main()
         }
