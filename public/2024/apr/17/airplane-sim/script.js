@@ -17,9 +17,9 @@ var jumped = false;
 
 
 function createTwinTower() {
-    let gapSize = 225;
+    let gapSize = 200;
 
-    let gapStart = random(100, 500);
+    let gapStart = random(100, 600 - gapSize - 25);
     let gapEnd = gapStart + gapSize;
 
     createTower(400, 0, 100, gapStart);
