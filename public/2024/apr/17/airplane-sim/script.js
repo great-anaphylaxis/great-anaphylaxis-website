@@ -156,13 +156,7 @@ function towerspawn() {
     createTwinTower();
 }
 
-
-function main() {
-    play.remove();
-    setInterval(mainloop, 20)
-    setInterval(towerspawn, random(3250, 3750))
-
-    
+function mainevents() {
     window.addEventListener("keydown", e => {
         if (e.key == " " && allowJump) {
             jumped = true
@@ -187,14 +181,19 @@ function main() {
         allowJump = true;
     })
 
-    createPlayer()
-    let audio = new Audio('./audio/erika_m.mp3');
-    audio.play();
+    window.addEventListener("mousedown", e => {
+        if (allowJump) {
+            jumped = true
+            allowJump = false;
+        }
+    })
+
+    window.addEventListener("mouseup", e => {
+        allowJump = true;
+    })
 }
 
-function entry() {
-    counter2.innerText = "Highscore: " + highscore;
-
+function entryevents() {
     window.addEventListener("keydown", e => {
         if (e.key == " " && start == false) {
             start = true;
@@ -208,6 +207,31 @@ function entry() {
             main()
         }
     });
+
+    window.addEventListener("mousedown", e => {
+        if (start == false) {
+            start = true;
+            main()
+        }
+    });
+}
+
+
+function main() {
+    play.remove();
+    setInterval(mainloop, 20)
+    setInterval(towerspawn, random(3250, 3750))
+
+    mainevents()
+
+    createPlayer()
+    let audio = new Audio('./audio/erika_m.mp3');
+    audio.play();
+}
+
+function entry() {
+    counter2.innerText = "Highscore: " + highscore;
+    entryevents()
 }   
 
 entry()
