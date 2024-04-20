@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "jhareignsolidum",
+    "site": "great-anaphylaxis",
     "public": "public",
     "ignore": [
       "firebase.json",
