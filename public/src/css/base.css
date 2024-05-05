@@ -127,9 +127,15 @@ a {
 
 .topbar-items {
     border: 1px solid rgb(210, 210, 210);
-    padding: 2em 2em 2em 2em;
+    padding: 2em 0.5em;
     color: rgb(210, 210, 210);
     font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .topbar-items {
+        padding: 2em;
+    }
 }
 
 .topbar-items:hover {
@@ -272,4 +278,43 @@ a {
 
 #data {
     display: none;
+}
+
+#new-website {
+    font-family: "Arial", monospace;
+    animation: 3s infinite alternate shiny;
+}
+
+@keyframes shiny {
+    0% {
+        background: linear-gradient(rgb(0, 68, 255), rgb(0, 255, 0));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+
+    34% {
+        background: linear-gradient(rgb(0, 60, 255), rgb(255, 145, 0));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+
+    67% {
+        background: linear-gradient(rgb(0, 255, 0), rgb(238, 255, 0));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+
+    100% {
+        background: linear-gradient(rgb(255, 238, 0), rgb(0, 255, 0));;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
 }
